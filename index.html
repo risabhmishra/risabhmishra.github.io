@@ -12,7 +12,7 @@
     <meta name="googlebot" content="index,follow,snippet,archive">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>IT Worker | responsive portfolio template</title>
+    <title>IT Worker</title>
 
     <meta name="keywords" content="">
 
@@ -818,9 +818,24 @@ _________________________________________________________ -->
         <!-- *** MAP ***
 _________________________________________________________ -->
 
-        <div class="section" id="map">
+<div id="googleMap" style="width:100%;height:400px;"></div>
 
-        </div>
+<script>
+function myMap() {
+var mapProp= {
+center: new google.maps.LatLng(12.823146,80.044081),
+zoom:18,
+
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(12.823146,80.044081),
+          map: map,
+          title: 'Hello World!'
+        });
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwagaIRLcUwdH5wUmVyGBKc8p4Ya9xOXI&callback=myMap"></script>
         <!-- /.section -->
 
         <!-- *** MAP END *** -->
@@ -837,7 +852,7 @@ _________________________________________________________ -->
 
                         <p class="social">
                             <a href="https://www.facebook.com/risabh.mishra" class="external facebook" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-facebook"></i></a>
-                            <a href="https://www.linkedin.com/in/risabhmishrandrothings/" class="external linkedin" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/risabhmishrandrothings/" class="external linkedin" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-github"></i></a>
                             <a href="https://github.com/risabhmishra" class="external github" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-google-plus"></i></a>
                             <a href="risabhmishra19@gmail.com" class="email" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
                         </p>
@@ -881,9 +896,7 @@ _________________________________________________________ -->
     <script src="js/waypoints.min.js"></script>
 
     <!-- maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwagaIRLcUwdH5wUmVyGBKc8p4Ya9xOXI"></script>
     <!-- to use it on your site, generate your own API key for Google Maps and paste it above -->
-    <script src="js/gmaps.js"></script>
 
     <!-- masonry layout -->
     <script src="js/masonry.pkgd.min.js"></script>
